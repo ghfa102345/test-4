@@ -145,6 +145,10 @@
         aspect-ratio: 4/4;
     }
 
+    html {
+        font-size: 15px;
+    }
+
     /* .fill-questioner {
         height: 50vh;
     } */
