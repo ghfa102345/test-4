@@ -135,7 +135,7 @@
     transform: rotate(180deg);
 }
 
-.video {
+/* .video {
     margin-bottom: 24px;
     position: relative;
 }
@@ -170,7 +170,7 @@
 .video__play-button:hover {
     color: #3B7EFF;
 }
-
+ */
 @media (max-width: 1460px) {
     .survey__text {
         width: 85%;
