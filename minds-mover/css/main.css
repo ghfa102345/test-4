@@ -410,7 +410,8 @@ main > .material-symbols-outlined {
     width: fit-content;
 
     left: 1rem;
-    top: 90.16%;
+/*     top: 90.16%; */
+    bottom: 1rem;
 }
 
 .video__caption::before {
