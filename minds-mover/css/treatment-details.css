@@ -1,0 +1,85 @@
+.treatment {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 32px 12px 24px;
+}
+
+.treatment__details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #EBEBF0;
+}
+
+/* .treatment__survey {
+
+} */
+
+.treatment-info {
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+}
+
+.treatment__number {
+    font-size: 32px;
+    color: #121212;
+}
+
+.treatment__series-name {
+    font-size: 20px;
+    color: #58585D;
+}
+
+.treatment__content {
+    gap: 20px;
+    padding: 12px;
+    background: #EFEFFF;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.treatment__image {
+    position: relative;
+}
+
+.treatment__image-element {
+    width: 195px;
+    border-radius: 8px;
+}
+
+.treatment__image .dot-widget__caption {
+    right: 12px;
+    bottom: 12px;
+    position: absolute;
+}
+
+.treatment__info {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: #121212;
+}
+.treatment__title {
+    font-weight: 500;
+    font-size: 24px;
+}
+.treatment__subtitle {
+    font-size: 16px;
+}
+.treatment__duration {
+    font-size: 16px;
+}
+
+.treatment__summary {
+    overflow: hidden;
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+}
+
+.treatment__summary > div:nth-child(1) {
+    margin-bottom: 14px;
+}

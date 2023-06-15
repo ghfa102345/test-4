@@ -1,0 +1,256 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBFBFD;
+    padding: 15px;
+    overflow: auto;
+    min-width: 330px;
+}
+
+.popup {
+    position: relative;
+}
+
+.popup::before {
+    content: "";
+    display: block;
+    width: 630px;
+    height: 1000px;
+    position: absolute;
+    top: -11.76%;
+    left: -10.42%;
+    z-index: -1;
+    background: url("../images/blue-bg.png") no-repeat;
+    background-size: contain;
+}
+
+.popup__container {
+    overflow: hidden;
+    height: 808px;
+    width: 1200px;
+    box-shadow: 0px 3px 20px rgba(15, 32, 72, 0.15);
+    background: var(--color-white);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__left {
+    flex: 45%;
+    height: 100%;
+    background: url(../images/login-popup-image.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.popup__right {
+    flex: 55%;
+    height: 100%;
+    padding: 2.625rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup__wrapper {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.popup__logo {
+    width: 24.313rem;
+    height: 2.938rem;
+    background: url("../images/logo.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.popup__form {
+    color: #121212;
+    width: 22.5rem;
+}
+
+.popup__legend {
+    font-size: 2rem;
+    line-height: 2.188rem;
+    margin-top: 2.313rem;
+    margin-bottom: 3.563rem;
+}
+
+.field {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.field__label {
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+}
+
+.field__input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #EBEBF0;
+    border-radius: 0.375rem;
+    /* font-size: 1rem; */
+    line-height: 1.063rem;
+    color: #8E8E93;
+}
+
+.field__input:focus {
+    border: 1px solid #3B7EFF;
+}
+
+.field__input-email {
+    margin-bottom: 0.75rem;
+}
+
+.popup__change-password {
+    display: block;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 0.938rem;
+    color: #3B7EFF;
+    margin-top: 1.875rem;
+}
+
+.popup__button {
+    font-weight: 600;
+    font-size: 1.25rem;
+    width: 100%;
+    line-height: 1.375rem;
+    color: #FFFFFF;
+    padding: 0.875rem 0;
+    border-radius: 2.5rem;
+    background: #121212;
+    margin-top: 2.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.popup__button:hover,
+.popup__button:focus {
+    background: #202020;
+}
+
+.popup__help {
+    color: #8E8E93;
+    font-size: 0.875rem;
+    align-self: flex-end;
+}
+
+.popup__change-password:hover,
+.popup__help:hover,
+.popup__change-password:focus,
+.popup__help:focus {
+    text-decoration: underline;
+}
+
+@media(max-width: 1600px) or (max-height: 1079px) {
+    .popup__container {
+        height: 727.2px;
+        width: 1080px;
+    }
+
+    .popup::before {
+        width: 567px;
+        height: 900px;
+    }
+}
+
+@media(max-width: 1420px) or (max-height: 980px) {
+    .popup__container {
+        height: 646.40px;
+        width: 960px;
+    }
+
+    .popup::before {
+        width: 504px;
+        height: 800px;
+    }
+
+    html {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 1260px) or (max-height: 880px) {
+    .popup__container {
+        height: 565.60px;
+        width: 840px;
+    }
+
+    .popup::before {
+        width: 441px;
+        height: 700px;
+    }
+
+    html {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 1100px) or (max-height: 780px) {
+    .popup__container {
+        height: 484.80px;
+        width: 720px;
+    }
+
+    .popup::before {
+        width: 378px;
+        height: 600px;
+    }
+
+    .popup__right {
+        padding: 1.875rem 1.438rem;
+    }
+
+    html {
+        font-size: 11.5px;
+    }
+}
+
+@media(max-width: 940px) or (max-height: 650px) {
+    .popup::before {
+        display: none;
+    }
+}
+
+@media(max-width: 770px) or (max-height: 550px) {
+    .popup__left {
+        display: none;
+    }
+
+    .popup__container {
+        width: 396px;
+    }
+}
+
+@media(max-width: 460px) {
+    .popup {
+        width: 100%;
+    }
+
+    .popup__container {
+        width: 100%;
+    }
+}
+
+@media(max-width: 370px) {
+    html {
+        font-size: 10.5px;
+    }
+
+    .popup__container {
+        height: fit-content;
+    }
+
+    .popup__wrapper {
+        margin: 20px 0;
+    }
+}

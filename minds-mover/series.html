@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/series.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <title>Minds Mover</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__wrаpper">
+            <div class="header__logo"></div>
+            <div class="header__row">
+                <form action="/search" method="GET" class="header__search">
+                    <input name="search-value" type="text" class="header__input" placeholder="Search input">
+                    <button type="submit" class="header__button"></button>
+                </form>
+                <div class="header__profile">
+                    <a href="#" class="header__icon header__icon--chat"></a>
+                    <a href="#" class="header__icon header__icon--bell"></a>
+                    <div class="header__user-info">
+                        <img src="images/user-photo.jpg" alt="" class="header__user-photo">
+                        <div class="header__user-details">
+                            <div class="header__user-name">Ralph Edwards</div>
+                            <div class="header__user-status">Active</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <ul class="sidebar__list">
+                <li class="sidebar__item">
+                    <a href="dashboard.html" class="sidebar__link sidebar__link--dashboard">
+                        <span class="sidebar__text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <details class="sidebar__details">
+                        <summary class="sidebar__summary">Series</summary>
+                        <ul class="sidebar__submenu">
+                            <li class="sidebar__submenu-item">
+                                <a href="#" class="sidebar__submenu-link">
+                                    <span class="sidebar__submenu-text">Series 1</span>
+                                </a>
+                            </li>
+                            <li class="sidebar__submenu-item">
+                                <a href="#" class="sidebar__submenu-link">
+                                    <span class="sidebar__submenu-text">Series 2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link sidebar__link--settings">
+                        <span class="sidebar__text">Settings</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link sidebar__link--help">
+                        <span class="sidebar__text">Help &amp; Contacts</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link sidebar__link--profile">
+                        <span class="sidebar__text">Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="tab-slider">
+                <button class="tab-slider__button tab-slider__button--back" id="left-button"></button>
+                <ul class="tab-slider__box">
+                    <li class="tab-slider__tab">Explanation</li>
+                    <li class="tab-slider__tab">Motivation</li>
+                    <li class="tab-slider__tab">Video 1</li>
+                    <li class="tab-slider__tab tab-slider__tab--active">Video 2</li>
+                    <li class="tab-slider__tab">Video 3</li>
+                    <li class="tab-slider__tab">Questioner</li>
+                    <li class="tab-slider__tab">Video 4</li>
+                    <li class="tab-slider__tab">Video 5</li>
+                    <li class="tab-slider__tab">Video 5</li>
+                    <li class="tab-slider__tab">Video 5</li>
+                    <li class="tab-slider__tab">Video 5</li>
+                    <li class="tab-slider__tab">Motivation</li>
+                    <li class="tab-slider__tab">Motivation</li>
+                    <li class="tab-slider__tab">Motivation</li>
+                </ul>
+                <button class="tab-slider__button tab-slider__button--next" id="right-button"></button>
+            </div>
+        </main>
+    </div>
+    <script src="./js/series.js"></script>
+</body>
+</html>

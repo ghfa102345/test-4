@@ -1,0 +1,156 @@
+.body {
+    overflow: auto;
+    min-width: 330px;
+}
+
+.query {
+    padding: 0 1rem;
+}
+
+.fill-questioner {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("../images/fill-questioner-image.jpg");
+    background-position: center 45%;
+    background-size: cover;
+    border: 1px solid #8E8E93;
+    border-radius: 8px;
+    width: 100%;
+    height: 63.52vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.survey {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.survey__questioner {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.survey__headline {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #121212;
+    margin-bottom: 8px;
+}
+
+.survey__series-name {
+    /* font-size: 1rem; */
+    color: #000000;
+}
+
+.survey__number-of-treatment {
+    /* font-size: 1rem; */
+    color: #121212;
+}
+
+.survey .therapist {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation__back,
+.navigation__next {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 500;
+}
+
+.navigation__text {
+    color: #58585D;
+}
+
+.navigation__back .navigation__text {
+    margin-left: 1.5rem;
+}
+
+.navigation__next .navigation__text {
+    margin-right: 1.5rem;   
+}
+
+.navigation__next {
+    align-items: end;
+}
+
+.navigation__button {
+    font-size: 1.5rem;
+    color: #58585D;
+    display: flex;
+    align-items: center;
+    transition: color 0.1s ease;
+}
+
+.navigation__button > .material-symbols-outlined {
+    transition: color 0.1s ease;
+}
+
+.navigation__button:hover,
+.navigation__button:focus {
+    color: #121212;
+}
+
+.navigation__button:hover .material-symbols-outlined,
+.navigation__button:focus .material-symbols-outlined {
+    color: #3B7EFF;
+}
+
+.material-symbols-outlined--arrow-forward {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 1440px) {
+    .main {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .fill-questioner {
+        height: 50vh;
+        min-height: 50vw;
+    }
+}
+
+@media (max-width: 640px) {
+    .query {
+        padding: 0;
+    }
+
+    .survey {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .survey .therapist {
+        align-items: flex-start;
+    }
+
+    /* .fill-questioner {
+        height: 50vh;
+    } */
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 300px) {
+    html {
+        font-size: 13px;
+    }
+}

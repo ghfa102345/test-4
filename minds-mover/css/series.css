@@ -1,0 +1,60 @@
+.tab-slider {
+    display: flex;
+    gap: 12px;
+    padding: 0 12px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBF0;
+    border-radius: 8px;
+}
+
+.tab-slider__button--next {
+    background: url("../images/arrow_next_ios-gray.png");
+}
+
+.tab-slider__button--back {
+    background: url("../images/arrow_back_ios.png");
+}
+
+.tab-slider__button {
+    width: 10px;
+    height: 20px;
+    flex: 0 0 auto;
+    background-size: cover;
+    margin: 14px 0;
+    cursor: pointer;
+}
+
+.tab-slider__box {
+    display: flex;
+    gap: 48px;
+    flex: 0 1 auto;
+    overflow: hidden;
+}
+
+.tab-slider__tab {
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 18px;
+    color: #121212;
+    margin: 14px 0;
+}
+
+.tab-slider__tab--active {
+    color: #3B7EFF;
+    position: relative;
+}
+
+.tab-slider__box .tab-slider__tab:not(:first-child).tab-slider__tab--active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 48px;
+    background: url("../images/rectangle.png");
+    top: -14px;
+    left: -31px;
+}
+
+.tab-slider__box .tab-slider__tab--active ~ .tab-slider__tab {
+    color: #8E8E93;
+}
