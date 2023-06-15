@@ -23,7 +23,6 @@
     max-width: 100%;
     width: auto;
 }
-}
 
 .survey {
     margin-bottom: 100px;
@@ -140,6 +139,10 @@
 
     .survey .therapist {
         align-items: flex-start;
+    }
+
+    .fill-questioner {
+        aspect-ratio: 4/4;
     }
 
     /* .fill-questioner {
