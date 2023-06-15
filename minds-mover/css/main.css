@@ -360,10 +360,13 @@ main > .material-symbols-outlined {
 
 .video__element {
     border-radius: 8px;
-    object-fit: cover;
-    overflow: hidden;
+    /* object-fit: cover; */
+    /* overflow: hidden; */
+    /* width: 100%; */
+    /* height: 63.55vh; */
     width: 100%;
-    height: 63.55vh;
+    height: 100%;
+    object-fit: cover;
 }
 
 .video__element--no-controls::-webkit-media-controls {
