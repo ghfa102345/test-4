@@ -356,6 +356,9 @@ main > .material-symbols-outlined {
 .video {
     margin-bottom: 24px;
     position: relative;
+    aspect-ratio: 16/9;
+    max-width: 100%;
+    width: auto;
 }
 
 .video__element {
