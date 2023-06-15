@@ -14,11 +14,15 @@
     border: 1px solid #8E8E93;
     border-radius: 8px;
     width: 100%;
-    height: 63.52vh;
+/*     height: 63.52vh; */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 24px;
+    aspect-ratio: 16/9;
+    max-width: 100%;
+    width: auto;
+}
 }
 
 .survey {
@@ -117,12 +121,12 @@
     }
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .fill-questioner {
         height: 50vh;
         min-height: 50vw;
     }
-}
+} */
 
 @media (max-width: 640px) {
     .query {
